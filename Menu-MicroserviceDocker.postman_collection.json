@@ -1,0 +1,123 @@
+{
+	"info": {
+		"_postman_id": "0c18a290-9f28-4dfa-ad62-2ffbefe60ae8",
+		"name": "Menu-MicroserviceDocker",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Post(Create)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\" : \"Burger\",\r\n    \"Preis\" : 7.7\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:88/api/menu",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "88",
+					"path": [
+						"api",
+						"menu"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET(id=1)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:88/api/menu/5f9185fe7fb17af1a0311c82",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "88",
+					"path": [
+						"api",
+						"menu",
+						"5f9185fe7fb17af1a0311c82"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete(id=1)",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:88/api/menu/5f9607072b34fb87383f055e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "88",
+					"path": [
+						"api",
+						"menu",
+						"5f9607072b34fb87383f055e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:88/api/menu",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "88",
+					"path": [
+						"api",
+						"menu"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "9ce2dba3-c9cd-439f-bb33-04b0b6ddc8b2",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "49c4a531-55cd-4cf0-a594-950b3857604f",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
